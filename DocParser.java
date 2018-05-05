@@ -13,6 +13,7 @@ import java.util.TreeSet;
 
 public class DocParser {
 
+	//reads the distinct words from the input file
 	public TreeSet<String> readFile(String fileName) {		
 		
 		TreeSet<String> wordList=new TreeSet<String>();
@@ -37,6 +38,7 @@ public class DocParser {
 		return wordList;
 	}
 	
+	//writes the words in ascending order to output.txt
 	public void writeFile(TreeSet<String> wordList) throws FileNotFoundException, UnsupportedEncodingException{	
 		
 		PrintWriter writer=new PrintWriter("output.txt","UTF8");
